@@ -1,0 +1,72 @@
+/* By Abdullah As-Sadeed */
+
+@define-color accent #89b4fa;
+@define-color background #24273a;
+@define-color background_2 #494d64;
+@define-color text #cad3f5;
+
+window {
+  background-color: @background;
+  border-radius: 8px;
+  border: 2px solid @accent;
+  margin: 0px;
+}
+
+#input {
+  background-color: @background_2;
+  border-radius: 8px;
+  border: 1px solid @background;
+  color: @text;
+  margin: 8px;
+}
+
+#input:hover,
+#input:focus {
+  border: 1px solid @accent;
+}
+
+#inner-box {
+  background-color: @background;
+  border-radius: 8px;
+  border: none;
+  margin: 8px;
+}
+
+#outer-box {
+  background-color: @background;
+  border: none;
+  margin: 8px;
+}
+
+#scroll {
+  border: none;
+  margin: 0px;
+}
+
+#text {
+  border: none;
+  color: @text;
+  margin: 8px;
+}
+
+#entry {
+  padding-left: 16px;
+}
+
+#entry * {
+  background-color: @background;
+  border-radius: 8px;
+  outline: none;
+}
+
+#entry:selected {
+  background-color: @background_2;
+  border-radius: 8px;
+  outline: none;
+}
+
+#entry:selected * {
+  background-color: @background_2;
+  border-radius: 8px;
+  outline: none;
+}

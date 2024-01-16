@@ -1,0 +1,30 @@
+/* By Abdullah As-Sadeed */
+
+@import "colors.css";
+
+* {
+    background-color: transparent;
+    color: @blue;
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+}
+
+*:focus, *:hover {
+    background-color: transparent;
+}
+
+window#waybar {
+    border-radius: 0%;
+}
+
+.modules-right * {
+    padding: 0 16px;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @red;
+}

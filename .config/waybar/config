@@ -1,0 +1,95 @@
+{
+  "modules-left": [
+    "hyprland/workspaces",
+    "tray",
+    "idle_inhibitor"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "backlight",
+    "cpu",
+    "memory",
+    "temperature",
+    "network",
+    "battery"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-scroll-up": "hyprctl dispatch workspace e+1"
+  },
+  "tray": {
+    "spacing": 16
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%d %B, %Y - %A}",
+    "timezone": "Asia/Dhaka",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+  },
+  "pulseaudio": {
+    "format": "{volume}%  {format_source}",
+    "format-bluetooth": "{volume}% {icon}  {format_source}",
+    "format-bluetooth-muted": " {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "on-click": "pavucontrol",
+    "scroll-step": 1,
+    "format-icons": {
+      "car": "",
+      "hands-free": "",
+      "headphone": "",
+      "headset": "",
+      "phone": "",
+      "portable": ""
+    }
+  },
+  "backlight": {
+    "format": "{percent}% "
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "tooltip": true
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{temperatureC}°C ",
+    "format-critical": "{temperatureC}°C "
+  },
+  "network": {
+    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "Disconnected ",
+    "format-ethernet": "Wired ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format": "{ifname} via {gwaddr} "
+  },
+  "battery": {
+    "states": {
+      "critical": 15,
+      "good": 95,
+      "warning": 30
+    },
+    "format": "{capacity}% {icon}",
+    "format-alt": "{time} {icon}",
+    "format-charging": "{capacity}% ",
+    "format-full": "{capacity}% ",
+    "format-good": "{capacity}% ",
+    "format-plugged": "{capacity}% "
+  }
+}
