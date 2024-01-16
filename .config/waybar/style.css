@@ -17,6 +17,10 @@ window#waybar {
     border-radius: 0%;
 }
 
+#tray {
+    padding: 0 16px;
+}
+
 .modules-right * {
     padding: 0 16px;
 }
