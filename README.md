@@ -1,2 +1,2 @@
 # Dotfiles
-A simple but elegant workstation
+A simple but elegant workstation.
